@@ -7,6 +7,8 @@
     <title>Learning Log</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="index.css">
+    <link rel="preload" href="./assets/lp-hero.jpg" as="image">
+
     <style>
         /* Customizing Tailwind colors with official colors */
         @layer utilities {
@@ -34,7 +36,7 @@
 
     <!-- Hero Section -->
     <section class="relative bg-primary h-[38rem] flex flex-col justify-center items-center text-white fade-in">
-        <img src="./assets/lp-hero.jpg" alt="Learning Log Cover" class="absolute inset-0 w-full h-full object-cover opacity-40">
+        <img src="./assets/lp-hero.jpg"  alt="Learning Log Cover" class="absolute inset-0 w-full h-full object-cover opacity-40">
         <div class="relative z-10 p-3">
             <h1 class="text-4xl font-bold">Learning Log</h1>
             <p class="mt-2 text-xl">Document your learning journey and stay organized!</p>
@@ -48,19 +50,19 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Feature 1 -->
                 <div class="bg-white p-6 rounded-lg shadow-md slide-left">
-                    <img src="./assets/track-progress.jpg" alt="Feature 1" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <img src="./assets/track-progress.jpg" alt="Feature 1" loading="lazy" class="w-full h-48 object-cover rounded-lg mb-4">
                     <h3 class="text-2xl font-bold text-primary">Track Progress</h3>
                     <p class="mt-2 text-gray-700">Easily document what you're learning and track your progress over time.</p>
                 </div>
                 <!-- Feature 2 -->
                 <div class="bg-white p-6 rounded-lg shadow-md slide-left">
-                    <img src="./assets/organized-notes.jpg" alt="Feature 2" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <img src="./assets/organized-notes.jpg" alt="Feature 2" loading="lazy" class="w-full h-48 object-cover rounded-lg mb-4">
                     <h3 class="text-2xl font-bold text-primary">Organize Notes</h3>
                     <p class="mt-2 text-gray-700">Keep your notes organized by topics or subjects, and retrieve them easily.</p>
                 </div>
                 <!-- Feature 3 -->
                 <div class="bg-white p-6 rounded-lg shadow-md slide-left">
-                    <img src="./assets/share-progress.jpg" alt="Feature 3" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <img src="./assets/share-progress.jpg" alt="Feature 3" loading="lazy" class="w-full h-48 object-cover rounded-lg mb-4">
                     <h3 class="text-2xl font-bold text-primary">Share Progress</h3>
                     <p class="mt-2 text-gray-700">Share your learning milestones with friends or team members to inspire collaboration.</p>
                 </div>
