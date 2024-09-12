@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Learning Log</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="index.css">
     <style>
         /* Customizing Tailwind colors with official colors */
         @layer utilities {
@@ -21,18 +22,18 @@
 <body class="bg-gray-100 text-gray-800">
     <!-- Header & Navigation -->
     <header class="bg-primary text-white shadow-lg">
-        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
-            <a href="#" class="font-bold text-2xl">Learning Log</a>
+        <div class="container  md:px-6 px-3 py-3 flex justify-between items-center">
+            <a href="#" class="font-bold md:text-2xl text-xl">Learning Log</a>
             <nav class="md:space-x-4 space-x-2 text-sm md:text-base">
                 <a href="#features" class="hover:underline">Features</a>
                 <a href="#about" class="hover:underline">About</a>
             </nav>
-            <a href="#" class="bg-white text-black md:px-4 md:py-2 p-2 rounded hover:bg-gray-100 transition duration-300">Go to App</a>
+            <a href="#" class="bg-white text-black md:px-4 md:py-2 p-2 text-sm md:text-base rounded hover:bg-gray-100 transition duration-300">Go to App</a>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="relative bg-primary h-96 flex flex-col justify-center items-center text-white">
+    <section class="relative bg-primary h-96 flex flex-col justify-center items-center text-white fade-in">
         <img src="./assets/lp-hero.jpg" alt="Learning Log Cover" class="absolute inset-0 w-full h-full object-cover opacity-40">
         <div class="relative z-10 p-3">
             <h1 class="text-4xl font-bold">Learning Log</h1>
@@ -46,21 +47,21 @@
             <h2 class="text-3xl font-bold text-center mb-8">Key Features</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Feature 1 -->
-                <div class="bg-white p-6 rounded-lg shadow-md">
+                <div class="bg-white p-6 rounded-lg shadow-md slide-left">
                     <img src="./assets/track-progress.jpg" alt="Feature 1" class="w-full h-48 object-cover rounded-lg mb-4">
-                    <h3 class="text-2xl font-bold text-primary">Feature 1: Track Progress</h3>
+                    <h3 class="text-2xl font-bold text-primary">Track Progress</h3>
                     <p class="mt-2 text-gray-700">Easily document what you're learning and track your progress over time.</p>
                 </div>
                 <!-- Feature 2 -->
-                <div class="bg-white p-6 rounded-lg shadow-md">
+                <div class="bg-white p-6 rounded-lg shadow-md slide-left">
                     <img src="./assets/organized-notes.jpg" alt="Feature 2" class="w-full h-48 object-cover rounded-lg mb-4">
-                    <h3 class="text-2xl font-bold text-primary">Feature 2: Organize Notes</h3>
+                    <h3 class="text-2xl font-bold text-primary">Organize Notes</h3>
                     <p class="mt-2 text-gray-700">Keep your notes organized by topics or subjects, and retrieve them easily.</p>
                 </div>
                 <!-- Feature 3 -->
-                <div class="bg-white p-6 rounded-lg shadow-md">
+                <div class="bg-white p-6 rounded-lg shadow-md slide-left">
                     <img src="./assets/share-progress.jpg" alt="Feature 3" class="w-full h-48 object-cover rounded-lg mb-4">
-                    <h3 class="text-2xl font-bold text-primary">Feature 3: Share Progress</h3>
+                    <h3 class="text-2xl font-bold text-primary">Share Progress</h3>
                     <p class="mt-2 text-gray-700">Share your learning milestones with friends or team members to inspire collaboration.</p>
                 </div>
             </div>
@@ -71,7 +72,7 @@
     <section id="about" class="py-12 bg-white px-4">
         <div class="container mx-auto">
             <h2 class="text-3xl font-bold text-center mb-8">About This Project</h2>
-            <p class="text-lg text-left md:text-center max-w-3xl mx-auto">
+            <p class="text-lg text-left md:text-center max-w-3xl mx-auto slide-up">
                 Learning Log was inspired by our own journey as students and learners. Keeping track of everything we were learning became overwhelming. 
                 That's when we realized the need for an easy-to-use platform where anyone could organize and track their learning. 
                 This project is also a portfolio project for Holberton School. You can view the repository and check out the team who helped build it below.
@@ -79,16 +80,16 @@
 
             <!-- Team Member Profiles -->
             <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-gray-100 p-6 rounded-lg text-center">
-                    <h3 class="text-xl font-bold mb-2">Mutabazi </h3>
+                <div class="bg-gray-100 p-6 rounded-lg text-center slide-up">
+                    <h3 class="text-xl font-bold mb-2">Jean De Dieu MUTABAZI</h3>
                     <p>Lead Developer</p>
                     <div class="flex justify-center space-x-4 mt-4">
-                        <a href="https://www.linkedin.com" target="_blank" class="text-primary hover:underline">LinkedIn</a>
-                        <a href="https://github.com" target="_blank" class="text-primary hover:underline">GitHub</a>
-                        <a href="https://twitter.com" target="_blank" class="text-primary hover:underline">Twitter</a>
+                        <a href="https://www.linkedin.com/in/jean-de-dieu-mutabazi-85024920a/" target="_blank" class="text-primary hover:underline">LinkedIn</a>
+                        <a href="https://github.com/mutabazi-00" target="_blank" class="text-primary hover:underline">GitHub</a>
+                        <a href="https://x.com/DieuMutabazi" target="_blank" class="text-primary hover:underline">Twitter</a>
                     </div>
                 </div>
-                <div class="bg-gray-100 p-6 rounded-lg text-center">
+                <div class="bg-gray-100 p-6 rounded-lg text-center slide-up">
                     <h3 class="text-xl font-bold mb-2">Akinsunmade Temitope</h3>
                     <p>Frontend developer</p>
                     <div class="flex justify-center space-x-4 mt-4">
@@ -97,7 +98,7 @@
                         <a href="https://twitter.com/SunMade_Codes" target="_blank" class="text-primary hover:underline">Twitter</a>
                     </div>
                 </div>
-                <div class="bg-gray-100 p-6 rounded-lg text-center">
+                <div class="bg-gray-100 p-6 rounded-lg text-center slide-up">
                     <h3 class="text-xl font-bold mb-2">Etsiwa Ebenezer</h3>
                     <p>Operations lead</p>
                     <div class="flex justify-center space-x-4 mt-4">
@@ -109,15 +110,16 @@
             </div>
 
             <!-- GitHub Repository Link -->
-            <div class="text-center mt-8">
-                <a href="https://github.com" target="_blank" class="text-primary font-bold hover:underline">View the GitHub Repository</a>
+            <div class="text-center mt-8 slide-up">
+                <a href="https://github.com/Eben-123/Learning-Log" target="_blank" class="text-primary font-bold hover:underline">View the GitHub Repository</a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="bg-primary text-white text-center py-4">
-        <p>&copy; 2024 Learning Log | All Rights Reserved.</p>
+        <p>&copy; <span id="current-year"></span> Learning Log | All Rights Reserved.</p>
     </footer>
+    <script src="index.js"></script>
 </body>
 </html>
